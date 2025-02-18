@@ -8,52 +8,10 @@
         "env": []
     },
     {
-        "id": "499f47e5c4a674b9",
-        "type": "group",
-        "z": "4c3d68c3cb4ac80a",
-        "name": "Get CPU Info",
-        "style": {
-            "fill": "#d1d1d1",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "5efbbcec87161c46",
-            "774f2504089ca13f",
-            "91e0fc5701534b6e",
-            "0b97ec0243258aec",
-            "2c99fc49721838bb"
-        ],
-        "x": 14,
-        "y": 239,
-        "w": 752,
-        "h": 122
-    },
-    {
-        "id": "b798775944f2f806",
-        "type": "group",
-        "z": "4c3d68c3cb4ac80a",
-        "name": "Get RAM and Traffic Info",
-        "style": {
-            "fill": "#d1d1d1",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "ff96344429821422",
-            "2ad62a34c62a67f2",
-            "3e1cde092d1453ea"
-        ],
-        "x": 14,
-        "y": 379,
-        "w": 592,
-        "h": 82
-    },
-    {
         "id": "189b41574c9ec8b6",
         "type": "group",
         "z": "4c3d68c3cb4ac80a",
-        "name": "Publish the data",
+        "name": "Publish Gateway Telemetry",
         "style": {
             "fill": "#d1d1d1",
             "label": true,
@@ -64,12 +22,13 @@
             "503bfd82fed90bde",
             "ed3f776ed52eaff8",
             "7f83051fe30b7157",
-            "711e9b4d33dce8d1"
+            "711e9b4d33dce8d1",
+            "ebb168a56f5c44ba"
         ],
         "x": 14,
-        "y": 479,
+        "y": 399,
         "w": 632,
-        "h": 122
+        "h": 162
     },
     {
         "id": "b155f8a144bfbecd",
@@ -124,11 +83,12 @@
             "7f2f005b79e8c0f4",
             "1881479c7dfc0acc",
             "696a9e25728eb952",
-            "aa4d17aa03093058"
+            "aa4d17aa03093058",
+            "26a245be32162e02"
         ],
         "x": 14,
         "y": 131.5,
-        "w": 672,
+        "w": 812,
         "h": 97
     },
     {
@@ -151,7 +111,7 @@
             "e58e45f8a133f5bc"
         ],
         "x": 14,
-        "y": 619,
+        "y": 579,
         "w": 1052,
         "h": 122
     },
@@ -175,15 +135,64 @@
             "d1076ee639c8d473"
         ],
         "x": 14,
-        "y": 759,
+        "y": 719,
         "w": 1052,
         "h": 122
+    },
+    {
+        "id": "b6e24cebb218ace9",
+        "type": "group",
+        "z": "4c3d68c3cb4ac80a",
+        "name": "Monitor Broker Connection",
+        "style": {
+            "stroke": "#a4a4a4",
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "82413d8ef470e659",
+            "3a9b5d476c8cfc05",
+            "8507173c1d1bf5b6",
+            "ca204250705d39d9",
+            "28c4af0ed39b22ef",
+            "894d59aa5a139854"
+        ],
+        "x": 14,
+        "y": 859,
+        "w": 592,
+        "h": 162
+    },
+    {
+        "id": "1b5d1f99b955b949",
+        "type": "group",
+        "z": "4c3d68c3cb4ac80a",
+        "name": "Get Gateway info",
+        "style": {
+            "stroke": "#a4a4a4",
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5efbbcec87161c46",
+            "ff96344429821422",
+            "774f2504089ca13f",
+            "91e0fc5701534b6e",
+            "0b97ec0243258aec",
+            "3e1cde092d1453ea",
+            "2c99fc49721838bb"
+        ],
+        "x": 14,
+        "y": 239,
+        "w": 752,
+        "h": 142
     },
     {
         "id": "5efbbcec87161c46",
         "type": "cpu",
         "z": "4c3d68c3cb4ac80a",
-        "g": "499f47e5c4a674b9",
+        "g": "1b5d1f99b955b949",
         "name": "",
         "msgCore": false,
         "msgOverall": true,
@@ -201,7 +210,7 @@
         "id": "ff96344429821422",
         "type": "DeviceStats",
         "z": "4c3d68c3cb4ac80a",
-        "g": "b798775944f2f806",
+        "g": "1b5d1f99b955b949",
         "name": "",
         "mem": true,
         "nw": true,
@@ -209,7 +218,7 @@
         "hostname": true,
         "useString": false,
         "x": 290,
-        "y": 420,
+        "y": 340,
         "wires": [
             [
                 "3e1cde092d1453ea"
@@ -220,7 +229,7 @@
         "id": "774f2504089ca13f",
         "type": "switch",
         "z": "4c3d68c3cb4ac80a",
-        "g": "499f47e5c4a674b9",
+        "g": "1b5d1f99b955b949",
         "name": "",
         "property": "topic",
         "propertyType": "msg",
@@ -254,7 +263,7 @@
         "id": "91e0fc5701534b6e",
         "type": "change",
         "z": "4c3d68c3cb4ac80a",
-        "g": "499f47e5c4a674b9",
+        "g": "1b5d1f99b955b949",
         "name": "",
         "rules": [
             {
@@ -280,7 +289,7 @@
         "id": "0b97ec0243258aec",
         "type": "change",
         "z": "4c3d68c3cb4ac80a",
-        "g": "499f47e5c4a674b9",
+        "g": "1b5d1f99b955b949",
         "name": "",
         "rules": [
             {
@@ -310,30 +319,10 @@
         ]
     },
     {
-        "id": "2ad62a34c62a67f2",
-        "type": "inject",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b798775944f2f806",
-        "name": "",
-        "props": [],
-        "repeat": "30",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 110,
-        "y": 420,
-        "wires": [
-            [
-                "ff96344429821422"
-            ]
-        ]
-    },
-    {
         "id": "3e1cde092d1453ea",
         "type": "change",
         "z": "4c3d68c3cb4ac80a",
-        "g": "b798775944f2f806",
+        "g": "1b5d1f99b955b949",
         "name": "",
         "rules": [
             {
@@ -370,8 +359,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 420,
+        "x": 460,
+        "y": 340,
         "wires": [
             []
         ]
@@ -380,19 +369,20 @@
         "id": "2c99fc49721838bb",
         "type": "inject",
         "z": "4c3d68c3cb4ac80a",
-        "g": "499f47e5c4a674b9",
+        "g": "1b5d1f99b955b949",
         "name": "",
         "props": [],
         "repeat": "30",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "3",
         "topic": "",
         "x": 110,
         "y": 300,
         "wires": [
             [
-                "5efbbcec87161c46"
+                "5efbbcec87161c46",
+                "ff96344429821422"
             ]
         ]
     },
@@ -415,7 +405,7 @@
         "payload": "{\"cpu_load\":0,\"cpu_temperature_average\":0,\"cpu_temperature_max\":0,\"ram_used\":0,\"ram_available\":0,\"traffic_tx\":0,\"traffic_rx\":0,\"local_ip\":0,\"mac_address\":0,\"digi_serial_number\":0}",
         "payloadType": "json",
         "x": 110,
-        "y": 520,
+        "y": 440,
         "wires": [
             [
                 "503bfd82fed90bde"
@@ -435,7 +425,7 @@
         "finalize": "",
         "libs": [],
         "x": 290,
-        "y": 520,
+        "y": 440,
         "wires": [
             [
                 "ed3f776ed52eaff8",
@@ -458,7 +448,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 510,
-        "y": 520,
+        "y": 440,
         "wires": []
     },
     {
@@ -466,7 +456,7 @@
         "type": "mqtt out",
         "z": "4c3d68c3cb4ac80a",
         "g": "189b41574c9ec8b6",
-        "name": "",
+        "name": "Publish Telmetry",
         "topic": "",
         "qos": "",
         "retain": "",
@@ -476,8 +466,8 @@
         "correl": "",
         "expiry": "",
         "broker": "ccbc5d68960d0c16",
-        "x": 470,
-        "y": 560,
+        "x": 500,
+        "y": 480,
         "wires": []
     },
     {
@@ -495,7 +485,7 @@
         "rh": 0,
         "inputs": 1,
         "x": 650,
-        "y": 660,
+        "y": 620,
         "wires": [
             [
                 "e563d2d3d7f3c0ae",
@@ -531,7 +521,7 @@
         "to": "",
         "reg": false,
         "x": 420,
-        "y": 660,
+        "y": 620,
         "wires": [
             [
                 "372e14b5775a555e"
@@ -622,7 +612,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 880,
-        "y": 660,
+        "y": 620,
         "wires": []
     },
     {
@@ -635,7 +625,7 @@
             "372e14b5775a555e"
         ],
         "x": 100,
-        "y": 660,
+        "y": 620,
         "wires": [
             [
                 "e34d3aaa5e8aba99"
@@ -675,7 +665,7 @@
         "repeat": "30",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "1",
         "topic": "",
         "x": 110,
         "y": 180,
@@ -691,7 +681,7 @@
         "z": "4c3d68c3cb4ac80a",
         "g": "6bbd761fc91a203a",
         "name": "function 15",
-        "func": "function extractEth0Info(output) {\n    const lines = output.split('\\n');\n    let eth0Info = {};\n    let eth0Section = false;\n\n    for (const line of lines) {\n        if (line.includes('11: eth0:')) {\n            eth0Section = true;\n        } else if (eth0Section && line.startsWith(' ')) {\n            if (line.includes('link/ether')) {\n                eth0Info.macAddress = line.match(/link\\/ether ([0-9a-f:]+)/)[1];\n            } else if (line.includes('inet ') && !line.includes('inet6')) {\n                const inetAddressWithCIDR = line.match(/inet ([0-9.]+\\/[0-9]+)/)[1];\n                eth0Info.inetAddress = inetAddressWithCIDR.split('/')[0];\n            }\n        } else if (eth0Section && !line.startsWith(' ')) {\n            break;\n        }\n    }\n\n    return eth0Info;\n}\n\n// Extract and print eth0 info\nconst eth0Info = extractEth0Info(msg.payload);\nmsg.payload = eth0Info;\nflow.set(\"local_ip\",eth0Info.inetAddress);\nflow.set(\"mac_address\",eth0Info.macAddress);\n//Set global variable for subscribe topic for whitelisting sensors\nflow.set(\"white_list_topic\", \"/v1.6/devices/\" + eth0Info.macAddress +\"/child_devices\");\nreturn msg;",
+        "func": "var ip = \"\";\nvar mac = \"\";\nfunction extractEth0Info(output) {\n    const lines = output.split('\\n');\n    \n    let eth0Section = false;\n    let brlanSelection = false;\n\n    for (const line of lines) {\n\n        //Get IP from ETH0 Interface\n        if (line.includes('11: eth0:')) {\n            eth0Section = true;\n        } else if (eth0Section && line.startsWith(' ')) {\n            if (line.includes('inet ') && !line.includes('inet6')) {\n                const inetAddressWithCIDR = line.match(/inet ([0-9.]+\\/[0-9]+)/)[1];\n                ip = inetAddressWithCIDR.split('/')[0];\n                eth0Section = false;\n            }\n        }\n\n\n        //Get MAC address from br_lan Interface\n        if (line.includes('14: br_lan:')) {\n            brlanSelection = true;\n        } else if (brlanSelection && line.startsWith(' ')) {\n            if (line.includes('link/ether')) {\n                mac = line.match(/link\\/ether ([0-9a-f:]+)/)[1];\n                brlanSelection = false\n            }\n        }\n    }\n\n    return;\n}\n\n// Extract and print eth0 info\nconst eth0Info = extractEth0Info(msg.payload);\nflow.set(\"local_ip\",ip);\nflow.set(\"mac_address\",mac);\n//Set global variable for subscribe topic for whitelisting sensors\nflow.set(\"white_list_topic\", \"/v1.6/devices/\" + mac +\"/child_devices\");\nmsg.broker = {};\nmsg.broker.username = mac;\nmsg.action = \"connect\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -701,7 +691,7 @@
         "y": 180,
         "wires": [
             [
-                "aa4d17aa03093058"
+                "26a245be32162e02"
             ]
         ]
     },
@@ -713,9 +703,10 @@
         "name": "link out 1",
         "mode": "link",
         "links": [
-            "1d07f3fece9c5fde"
+            "1d07f3fece9c5fde",
+            "ebb168a56f5c44ba"
         ],
-        "x": 645,
+        "x": 785,
         "y": 180,
         "wires": []
     },
@@ -738,7 +729,7 @@
         "repair": false,
         "outputs": 1,
         "x": 250,
-        "y": 660,
+        "y": 620,
         "wires": [
             [
                 "58d0813efcfe4d78"
@@ -766,7 +757,7 @@
         "to": "",
         "reg": false,
         "x": 920,
-        "y": 700,
+        "y": 660,
         "wires": [
             []
         ]
@@ -781,7 +772,7 @@
         "unknown_devices": 0,
         "outputs": 1,
         "x": 150,
-        "y": 840,
+        "y": 800,
         "wires": [
             [
                 "054d0fae246af450"
@@ -807,7 +798,7 @@
         "repair": false,
         "outputs": 1,
         "x": 350,
-        "y": 840,
+        "y": 800,
         "wires": [
             [
                 "2de3d6c4f3ed3d8a"
@@ -827,7 +818,7 @@
         "finalize": "",
         "libs": [],
         "x": 540,
-        "y": 840,
+        "y": 800,
         "wires": [
             [
                 "ae9491fa2f565adb"
@@ -847,7 +838,7 @@
         "finalize": "",
         "libs": [],
         "x": 730,
-        "y": 840,
+        "y": 800,
         "wires": [
             [
                 "7266146041fc8e08",
@@ -870,7 +861,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 930,
-        "y": 840,
+        "y": 800,
         "wires": []
     },
     {
@@ -884,7 +875,7 @@
             "711e9b4d33dce8d1"
         ],
         "x": 855,
-        "y": 800,
+        "y": 760,
         "wires": []
     },
     {
@@ -897,11 +888,203 @@
             "d1076ee639c8d473"
         ],
         "x": 325,
-        "y": 560,
+        "y": 480,
         "wires": [
             [
                 "7f83051fe30b7157"
             ]
+        ]
+    },
+    {
+        "id": "ebb168a56f5c44ba",
+        "type": "link in",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "189b41574c9ec8b6",
+        "name": "link in 2",
+        "links": [
+            "aa4d17aa03093058"
+        ],
+        "x": 325,
+        "y": 520,
+        "wires": [
+            [
+                "7f83051fe30b7157"
+            ]
+        ]
+    },
+    {
+        "id": "82413d8ef470e659",
+        "type": "status",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b6e24cebb218ace9",
+        "name": "Broker Connection",
+        "scope": [
+            "7f83051fe30b7157"
+        ],
+        "x": 130,
+        "y": 920,
+        "wires": [
+            [
+                "3a9b5d476c8cfc05"
+            ]
+        ]
+    },
+    {
+        "id": "3a9b5d476c8cfc05",
+        "type": "switch",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b6e24cebb218ace9",
+        "name": "",
+        "property": "status.text",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "node-red:common.status.connected",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "node-red:common.status.connected",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 920,
+        "wires": [
+            [
+                "8507173c1d1bf5b6"
+            ],
+            [
+                "ca204250705d39d9"
+            ]
+        ]
+    },
+    {
+        "id": "8507173c1d1bf5b6",
+        "type": "change",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b6e24cebb218ace9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "broker_status",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca204250705d39d9",
+        "type": "change",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b6e24cebb218ace9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "broker_status",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26a245be32162e02",
+        "type": "switch",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "6bbd761fc91a203a",
+        "name": "",
+        "property": "broker_status",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 180,
+        "wires": [
+            [
+                "aa4d17aa03093058"
+            ]
+        ]
+    },
+    {
+        "id": "28c4af0ed39b22ef",
+        "type": "inject",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b6e24cebb218ace9",
+        "name": "Initialize connection variable",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 980,
+        "wires": [
+            [
+                "894d59aa5a139854"
+            ]
+        ]
+    },
+    {
+        "id": "894d59aa5a139854",
+        "type": "change",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b6e24cebb218ace9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "broker_status",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 980,
+        "wires": [
+            []
         ]
     },
     {
@@ -911,7 +1094,7 @@
         "broker": "http://ncd.mqtt.api.ubidots.com/",
         "port": "1883",
         "clientid": "",
-        "autoConnect": true,
+        "autoConnect": false,
         "usetls": false,
         "protocolVersion": "4",
         "keepalive": "60",
