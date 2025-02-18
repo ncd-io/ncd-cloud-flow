@@ -1,0 +1,946 @@
+[
+    {
+        "id": "4c3d68c3cb4ac80a",
+        "type": "tab",
+        "label": "NCD Cloud Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "499f47e5c4a674b9",
+        "type": "group",
+        "z": "4c3d68c3cb4ac80a",
+        "name": "Get CPU Info",
+        "style": {
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5efbbcec87161c46",
+            "774f2504089ca13f",
+            "91e0fc5701534b6e",
+            "0b97ec0243258aec",
+            "2c99fc49721838bb"
+        ],
+        "x": 14,
+        "y": 239,
+        "w": 752,
+        "h": 122
+    },
+    {
+        "id": "b798775944f2f806",
+        "type": "group",
+        "z": "4c3d68c3cb4ac80a",
+        "name": "Get RAM and Traffic Info",
+        "style": {
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "ff96344429821422",
+            "2ad62a34c62a67f2",
+            "3e1cde092d1453ea"
+        ],
+        "x": 14,
+        "y": 379,
+        "w": 592,
+        "h": 82
+    },
+    {
+        "id": "189b41574c9ec8b6",
+        "type": "group",
+        "z": "4c3d68c3cb4ac80a",
+        "name": "Publish the data",
+        "style": {
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "0ba625c350c75d39",
+            "503bfd82fed90bde",
+            "ed3f776ed52eaff8",
+            "7f83051fe30b7157",
+            "711e9b4d33dce8d1"
+        ],
+        "x": 14,
+        "y": 479,
+        "w": 632,
+        "h": 122
+    },
+    {
+        "id": "b155f8a144bfbecd",
+        "type": "group",
+        "z": "4c3d68c3cb4ac80a",
+        "name": "Get Digi Serial Number",
+        "style": {
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "57dd15e85d7e8750",
+            "daa11dc7fa349e07",
+            "d4618ca1f31c712b",
+            "ca4b01d476bbf3f5"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 672,
+        "h": 102
+    },
+    {
+        "id": "ca4b01d476bbf3f5",
+        "type": "debug",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b155f8a144bfbecd",
+        "name": "debug 27",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6bbd761fc91a203a",
+        "type": "group",
+        "z": "4c3d68c3cb4ac80a",
+        "name": "Get IP and MAC address",
+        "style": {
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7f2f005b79e8c0f4",
+            "1881479c7dfc0acc",
+            "696a9e25728eb952",
+            "aa4d17aa03093058"
+        ],
+        "x": 14,
+        "y": 131.5,
+        "w": 672,
+        "h": 97
+    },
+    {
+        "id": "b629893a81a3bd9f",
+        "type": "group",
+        "z": "4c3d68c3cb4ac80a",
+        "name": "Subscribe to White List Topic",
+        "style": {
+            "stroke": "#a4a4a4",
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "372e14b5775a555e",
+            "58d0813efcfe4d78",
+            "e563d2d3d7f3c0ae",
+            "508632b7af5d5bea",
+            "e34d3aaa5e8aba99",
+            "e58e45f8a133f5bc"
+        ],
+        "x": 14,
+        "y": 619,
+        "w": 1052,
+        "h": 122
+    },
+    {
+        "id": "08f555a93f6af4ec",
+        "type": "group",
+        "z": "4c3d68c3cb4ac80a",
+        "name": "Report Sensor Telemetry",
+        "style": {
+            "stroke": "#a4a4a4",
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "72ad9dd8aabe80c5",
+            "054d0fae246af450",
+            "2de3d6c4f3ed3d8a",
+            "ae9491fa2f565adb",
+            "7266146041fc8e08",
+            "d1076ee639c8d473"
+        ],
+        "x": 14,
+        "y": 759,
+        "w": 1052,
+        "h": 122
+    },
+    {
+        "id": "5efbbcec87161c46",
+        "type": "cpu",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "499f47e5c4a674b9",
+        "name": "",
+        "msgCore": false,
+        "msgOverall": true,
+        "msgArray": false,
+        "msgTemp": true,
+        "x": 290,
+        "y": 300,
+        "wires": [
+            [
+                "774f2504089ca13f"
+            ]
+        ]
+    },
+    {
+        "id": "ff96344429821422",
+        "type": "DeviceStats",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b798775944f2f806",
+        "name": "",
+        "mem": true,
+        "nw": true,
+        "load": true,
+        "hostname": true,
+        "useString": false,
+        "x": 290,
+        "y": 420,
+        "wires": [
+            [
+                "3e1cde092d1453ea"
+            ]
+        ]
+    },
+    {
+        "id": "774f2504089ca13f",
+        "type": "switch",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "499f47e5c4a674b9",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "overall",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "temperature",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 300,
+        "wires": [
+            [
+                "91e0fc5701534b6e"
+            ],
+            [
+                "0b97ec0243258aec"
+            ]
+        ]
+    },
+    {
+        "id": "91e0fc5701534b6e",
+        "type": "change",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "499f47e5c4a674b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "cpu_load",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b97ec0243258aec",
+        "type": "change",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "499f47e5c4a674b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "cpu_temperature_average",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "cpu_temperature_max",
+                "pt": "flow",
+                "to": "max",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ad62a34c62a67f2",
+        "type": "inject",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b798775944f2f806",
+        "name": "",
+        "props": [],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 420,
+        "wires": [
+            [
+                "ff96344429821422"
+            ]
+        ]
+    },
+    {
+        "id": "3e1cde092d1453ea",
+        "type": "change",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b798775944f2f806",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ram_used",
+                "pt": "flow",
+                "to": "payload.mem.used",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "ram_available",
+                "pt": "flow",
+                "to": "payload.mem.free",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "traffic_tx",
+                "pt": "flow",
+                "to": "payload.nw.eth0.tx",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "traffic_rx",
+                "pt": "flow",
+                "to": "payload.nw.eth0.rx",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c99fc49721838bb",
+        "type": "inject",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "499f47e5c4a674b9",
+        "name": "",
+        "props": [],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "5efbbcec87161c46"
+            ]
+        ]
+    },
+    {
+        "id": "0ba625c350c75d39",
+        "type": "inject",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "189b41574c9ec8b6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "20",
+        "topic": "",
+        "payload": "{\"cpu_load\":0,\"cpu_temperature_average\":0,\"cpu_temperature_max\":0,\"ram_used\":0,\"ram_available\":0,\"traffic_tx\":0,\"traffic_rx\":0,\"local_ip\":0,\"mac_address\":0,\"digi_serial_number\":0}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 520,
+        "wires": [
+            [
+                "503bfd82fed90bde"
+            ]
+        ]
+    },
+    {
+        "id": "503bfd82fed90bde",
+        "type": "function",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "189b41574c9ec8b6",
+        "name": "function 14",
+        "func": "msg.payload.cpu_load = flow.get(\"cpu_load\");\nmsg.payload.cpu_temperature_average = flow.get(\"cpu_temperature_average\");\nmsg.payload.cpu_temperature_max = flow.get(\"cpu_temperature_max\");\nmsg.payload.ram_available = flow.get(\"ram_available\");\nmsg.payload.ram_used = flow.get(\"ram_used\");\nmsg.payload.traffic_tx = flow.get(\"traffic_tx\");\nmsg.payload.traffic_rx = flow.get(\"traffic_rx\");\nmsg.payload.digi_serial_number = {\"value\":1,\"context\":{\"radio_serial_number\":flow.get(\"digi_serial_number\")}};\n// msg.payload.mac_address = {\"value\":1,\"context\":{\"mac_address\":flow.get(\"mac_address\")}};\nmsg.payload.local_ip = {\"value\":1,\"context\":{\"local_ip\":flow.get(\"local_ip\")}};\nmsg.topic = \"/v1.6/devices/\"+flow.get(\"mac_address\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 520,
+        "wires": [
+            [
+                "ed3f776ed52eaff8",
+                "7f83051fe30b7157"
+            ]
+        ]
+    },
+    {
+        "id": "ed3f776ed52eaff8",
+        "type": "debug",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "189b41574c9ec8b6",
+        "name": "Gateway Telemetry",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7f83051fe30b7157",
+        "type": "mqtt out",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "189b41574c9ec8b6",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ccbc5d68960d0c16",
+        "x": 470,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "372e14b5775a555e",
+        "type": "mqtt in",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b629893a81a3bd9f",
+        "name": "White List Subscribe",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ccbc5d68960d0c16",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 650,
+        "y": 660,
+        "wires": [
+            [
+                "e563d2d3d7f3c0ae",
+                "e58e45f8a133f5bc"
+            ]
+        ]
+    },
+    {
+        "id": "58d0813efcfe4d78",
+        "type": "change",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b629893a81a3bd9f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "white_list_topic",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "action",
+                "pt": "msg",
+                "to": "subscribe",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 660,
+        "wires": [
+            [
+                "372e14b5775a555e"
+            ]
+        ]
+    },
+    {
+        "id": "57dd15e85d7e8750",
+        "type": "ncd-gateway-node",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b155f8a144bfbecd",
+        "name": "",
+        "connection": "3a158777559a1790",
+        "unknown_devices": 0,
+        "outputs": 1,
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "daa11dc7fa349e07"
+            ]
+        ]
+    },
+    {
+        "id": "daa11dc7fa349e07",
+        "type": "switch",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b155f8a144bfbecd",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "modem_mac",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 60,
+        "wires": [
+            [
+                "d4618ca1f31c712b"
+            ]
+        ]
+    },
+    {
+        "id": "d4618ca1f31c712b",
+        "type": "change",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b155f8a144bfbecd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "digi_serial_number",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e563d2d3d7f3c0ae",
+        "type": "debug",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b629893a81a3bd9f",
+        "name": "Whitelist Update",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "508632b7af5d5bea",
+        "type": "status",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b629893a81a3bd9f",
+        "name": "",
+        "scope": [
+            "372e14b5775a555e"
+        ],
+        "x": 100,
+        "y": 660,
+        "wires": [
+            [
+                "e34d3aaa5e8aba99"
+            ]
+        ]
+    },
+    {
+        "id": "7f2f005b79e8c0f4",
+        "type": "exec",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "6bbd761fc91a203a",
+        "command": "ip addr show",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "696a9e25728eb952"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1881479c7dfc0acc",
+        "type": "inject",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "6bbd761fc91a203a",
+        "name": "",
+        "props": [],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "7f2f005b79e8c0f4"
+            ]
+        ]
+    },
+    {
+        "id": "696a9e25728eb952",
+        "type": "function",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "6bbd761fc91a203a",
+        "name": "function 15",
+        "func": "function extractEth0Info(output) {\n    const lines = output.split('\\n');\n    let eth0Info = {};\n    let eth0Section = false;\n\n    for (const line of lines) {\n        if (line.includes('11: eth0:')) {\n            eth0Section = true;\n        } else if (eth0Section && line.startsWith(' ')) {\n            if (line.includes('link/ether')) {\n                eth0Info.macAddress = line.match(/link\\/ether ([0-9a-f:]+)/)[1];\n            } else if (line.includes('inet ') && !line.includes('inet6')) {\n                const inetAddressWithCIDR = line.match(/inet ([0-9.]+\\/[0-9]+)/)[1];\n                eth0Info.inetAddress = inetAddressWithCIDR.split('/')[0];\n            }\n        } else if (eth0Section && !line.startsWith(' ')) {\n            break;\n        }\n    }\n\n    return eth0Info;\n}\n\n// Extract and print eth0 info\nconst eth0Info = extractEth0Info(msg.payload);\nmsg.payload = eth0Info;\nflow.set(\"local_ip\",eth0Info.inetAddress);\nflow.set(\"mac_address\",eth0Info.macAddress);\n//Set global variable for subscribe topic for whitelisting sensors\nflow.set(\"white_list_topic\", \"/v1.6/devices/\" + eth0Info.macAddress +\"/child_devices\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 180,
+        "wires": [
+            [
+                "aa4d17aa03093058"
+            ]
+        ]
+    },
+    {
+        "id": "aa4d17aa03093058",
+        "type": "link out",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "6bbd761fc91a203a",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "1d07f3fece9c5fde"
+        ],
+        "x": 645,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e34d3aaa5e8aba99",
+        "type": "switch",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b629893a81a3bd9f",
+        "name": "",
+        "property": "status.text",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "node-red:common.status.connected",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 250,
+        "y": 660,
+        "wires": [
+            [
+                "58d0813efcfe4d78"
+            ]
+        ]
+    },
+    {
+        "id": "e58e45f8a133f5bc",
+        "type": "change",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "b629893a81a3bd9f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "white_list_sensors",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72ad9dd8aabe80c5",
+        "type": "ncd-gateway-node",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "08f555a93f6af4ec",
+        "name": "",
+        "connection": "3a158777559a1790",
+        "unknown_devices": 0,
+        "outputs": 1,
+        "x": 150,
+        "y": 840,
+        "wires": [
+            [
+                "054d0fae246af450"
+            ]
+        ]
+    },
+    {
+        "id": "054d0fae246af450",
+        "type": "switch",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "08f555a93f6af4ec",
+        "name": "sensor_data",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "sensor_data",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 840,
+        "wires": [
+            [
+                "2de3d6c4f3ed3d8a"
+            ]
+        ]
+    },
+    {
+        "id": "2de3d6c4f3ed3d8a",
+        "type": "function",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "08f555a93f6af4ec",
+        "name": "Check Whitelist",
+        "func": "var whiteListSensors = flow.get(\"white_list_sensors\");\nvar list = whiteListSensors.split(\",\");\nif (list.includes(msg.payload.addr)){\n    return msg;\n}else{\n    return null;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 840,
+        "wires": [
+            [
+                "ae9491fa2f565adb"
+            ]
+        ]
+    },
+    {
+        "id": "ae9491fa2f565adb",
+        "type": "function",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "08f555a93f6af4ec",
+        "name": "flatten JSON",
+        "func": "msg.topic = \"/v1.6/devices/\" + msg.payload.addr;\ndelete msg.payload.original;\ndelete msg.payload.addr;\ndelete msg.payload.sensor_name;\ndelete msg.payload.battery;\ndelete msg.payload.type;\ndelete msg.time\ndelete msg.payload.sensor_type;\nconst flattenedObj = { ...msg.payload, ...msg.payload.sensor_data };\n\n// Remove the sensor_data property\ndelete flattenedObj.sensor_data;\nmsg.payload = flattenedObj\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 840,
+        "wires": [
+            [
+                "7266146041fc8e08",
+                "d1076ee639c8d473"
+            ]
+        ]
+    },
+    {
+        "id": "7266146041fc8e08",
+        "type": "debug",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "08f555a93f6af4ec",
+        "name": "Sensor Telemetry",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "d1076ee639c8d473",
+        "type": "link out",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "08f555a93f6af4ec",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "711e9b4d33dce8d1"
+        ],
+        "x": 855,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "711e9b4d33dce8d1",
+        "type": "link in",
+        "z": "4c3d68c3cb4ac80a",
+        "g": "189b41574c9ec8b6",
+        "name": "link in 1",
+        "links": [
+            "d1076ee639c8d473"
+        ],
+        "x": 325,
+        "y": 560,
+        "wires": [
+            [
+                "7f83051fe30b7157"
+            ]
+        ]
+    },
+    {
+        "id": "ccbc5d68960d0c16",
+        "type": "mqtt-broker",
+        "name": "ncd-cloud",
+        "broker": "http://ncd.mqtt.api.ubidots.com/",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3a158777559a1790",
+        "type": "ncd-gateway-config",
+        "name": "",
+        "comm_type": "serial",
+        "ip_address": "",
+        "tcp_port": "2101",
+        "port": "/dev/ttymxc2",
+        "baudRate": "115200",
+        "pan_id": "7FFF",
+        "rssi": false
+    }
+]
