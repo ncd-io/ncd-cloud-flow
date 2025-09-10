@@ -1,6 +1,6 @@
 [
     {
-        "id": "4c3d68c3cb4ac80a",
+        "id": "1e2b629469898bce",
         "type": "tab",
         "label": "NCD Cloud Flow",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "189b41574c9ec8b6",
+        "id": "b9289c8c1791a369",
         "type": "group",
-        "z": "4c3d68c3cb4ac80a",
+        "z": "1e2b629469898bce",
         "name": "Publish Gateway Telemetry",
         "style": {
             "fill": "#d1d1d1",
@@ -18,22 +18,22 @@
             "color": "#000000"
         },
         "nodes": [
-            "0ba625c350c75d39",
-            "503bfd82fed90bde",
-            "ed3f776ed52eaff8",
-            "7f83051fe30b7157",
-            "711e9b4d33dce8d1",
-            "ebb168a56f5c44ba"
+            "73dd8c1aced50fce",
+            "1b709e918e5360b0",
+            "62f8f0d1505983b3",
+            "8e5425ed0161711c",
+            "8157de542853a779",
+            "18ff79b9c98197fc"
         ],
         "x": 14,
-        "y": 399,
+        "y": 439,
         "w": 632,
         "h": 162
     },
     {
-        "id": "b155f8a144bfbecd",
+        "id": "31729524c0486950",
         "type": "group",
-        "z": "4c3d68c3cb4ac80a",
+        "z": "1e2b629469898bce",
         "name": "Get Digi Serial Number",
         "style": {
             "fill": "#d1d1d1",
@@ -41,38 +41,19 @@
             "color": "#000000"
         },
         "nodes": [
-            "57dd15e85d7e8750",
-            "daa11dc7fa349e07",
-            "d4618ca1f31c712b",
-            "ca4b01d476bbf3f5"
+            "d95fef0e93060e87",
+            "ee4e36bd7b005f78",
+            "c2f8916246ed245f"
         ],
         "x": 14,
         "y": 19,
-        "w": 672,
-        "h": 102
+        "w": 692,
+        "h": 82
     },
     {
-        "id": "ca4b01d476bbf3f5",
-        "type": "debug",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b155f8a144bfbecd",
-        "name": "debug 27",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 340,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "6bbd761fc91a203a",
+        "id": "d31f4bad872a4dab",
         "type": "group",
-        "z": "4c3d68c3cb4ac80a",
+        "z": "1e2b629469898bce",
         "name": "Get IP and MAC address",
         "style": {
             "fill": "#d1d1d1",
@@ -80,21 +61,22 @@
             "color": "#000000"
         },
         "nodes": [
-            "7f2f005b79e8c0f4",
-            "1881479c7dfc0acc",
-            "696a9e25728eb952",
-            "aa4d17aa03093058",
-            "26a245be32162e02"
+            "47fa3380f33e2469",
+            "9f28ef2032ac9fac",
+            "183e7fd90b6b3830",
+            "545e0f8ccc4eea02",
+            "0f83db278ab02525",
+            "7853edfbefb4b6c7"
         ],
         "x": 14,
-        "y": 131.5,
+        "y": 111.5,
         "w": 812,
-        "h": 97
+        "h": 129.5
     },
     {
-        "id": "b629893a81a3bd9f",
+        "id": "e3282ff6e148a328",
         "type": "group",
-        "z": "4c3d68c3cb4ac80a",
+        "z": "1e2b629469898bce",
         "name": "Subscribe to White List Topic",
         "style": {
             "stroke": "#a4a4a4",
@@ -103,22 +85,22 @@
             "color": "#000000"
         },
         "nodes": [
-            "372e14b5775a555e",
-            "58d0813efcfe4d78",
-            "e563d2d3d7f3c0ae",
-            "508632b7af5d5bea",
-            "e34d3aaa5e8aba99",
-            "e58e45f8a133f5bc"
+            "05883045ca12c38a",
+            "bc8aef22fccd6d5a",
+            "035a80bb50124e13",
+            "b4f9fa7c12da0b08",
+            "f6831fd94557311e",
+            "a6fd81b9daefc379"
         ],
         "x": 14,
-        "y": 579,
+        "y": 619,
         "w": 1052,
         "h": 122
     },
     {
-        "id": "08f555a93f6af4ec",
+        "id": "a5069d4d0f8eb24a",
         "type": "group",
-        "z": "4c3d68c3cb4ac80a",
+        "z": "1e2b629469898bce",
         "name": "Report Sensor Telemetry",
         "style": {
             "stroke": "#a4a4a4",
@@ -127,22 +109,23 @@
             "color": "#000000"
         },
         "nodes": [
-            "72ad9dd8aabe80c5",
-            "054d0fae246af450",
-            "2de3d6c4f3ed3d8a",
-            "ae9491fa2f565adb",
-            "7266146041fc8e08",
-            "d1076ee639c8d473"
+            "d4f74c1a477dd350",
+            "8cc768475cf33a5a",
+            "75194025fba3c998",
+            "eed8885b8dcd2258",
+            "7ae034849c0b7cef",
+            "93d012ad0d6ddafa",
+            "d2292d72e25db902"
         ],
         "x": 14,
-        "y": 719,
-        "w": 1052,
+        "y": 759,
+        "w": 1272,
         "h": 122
     },
     {
-        "id": "b6e24cebb218ace9",
+        "id": "416a9fe6a78de7c6",
         "type": "group",
-        "z": "4c3d68c3cb4ac80a",
+        "z": "1e2b629469898bce",
         "name": "Monitor Broker Connection",
         "style": {
             "stroke": "#a4a4a4",
@@ -151,22 +134,22 @@
             "color": "#000000"
         },
         "nodes": [
-            "82413d8ef470e659",
-            "3a9b5d476c8cfc05",
-            "8507173c1d1bf5b6",
-            "ca204250705d39d9",
-            "28c4af0ed39b22ef",
-            "894d59aa5a139854"
+            "9028c4debddd878c",
+            "bc102b840b632d92",
+            "3aa813e2e7ba8c0f",
+            "0648a792d0330ac8",
+            "51767d544cc920d3",
+            "17f6455ba39c1b51"
         ],
         "x": 14,
-        "y": 859,
+        "y": 899,
         "w": 592,
         "h": 162
     },
     {
-        "id": "1b5d1f99b955b949",
+        "id": "5171c94ca351e2f8",
         "type": "group",
-        "z": "4c3d68c3cb4ac80a",
+        "z": "1e2b629469898bce",
         "name": "Get Gateway info",
         "style": {
             "stroke": "#a4a4a4",
@@ -175,95 +158,26 @@
             "color": "#000000"
         },
         "nodes": [
-            "5efbbcec87161c46",
-            "ff96344429821422",
-            "774f2504089ca13f",
-            "91e0fc5701534b6e",
-            "0b97ec0243258aec",
-            "3e1cde092d1453ea",
-            "2c99fc49721838bb"
+            "38fe756be46663b2",
+            "d7033219d48df907",
+            "aa01f7f32f515dc7",
+            "ea3cc55ebd9b7b59",
+            "74a011e3a1c7bcda",
+            "a689bbfaadd9c7c2",
+            "f7ff74063377beda",
+            "8f0f1595edf91464",
+            "c9c2325e35abe870"
         ],
         "x": 14,
-        "y": 239,
-        "w": 752,
-        "h": 142
+        "y": 259,
+        "w": 812,
+        "h": 169.5
     },
     {
-        "id": "5efbbcec87161c46",
-        "type": "cpu",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "1b5d1f99b955b949",
-        "name": "",
-        "msgCore": false,
-        "msgOverall": true,
-        "msgArray": false,
-        "msgTemp": true,
-        "x": 290,
-        "y": 300,
-        "wires": [
-            [
-                "774f2504089ca13f"
-            ]
-        ]
-    },
-    {
-        "id": "ff96344429821422",
-        "type": "DeviceStats",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "1b5d1f99b955b949",
-        "name": "",
-        "mem": true,
-        "nw": true,
-        "load": true,
-        "hostname": true,
-        "useString": false,
-        "x": 290,
-        "y": 340,
-        "wires": [
-            [
-                "3e1cde092d1453ea"
-            ]
-        ]
-    },
-    {
-        "id": "774f2504089ca13f",
-        "type": "switch",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "1b5d1f99b955b949",
-        "name": "",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "overall",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "temperature",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 470,
-        "y": 300,
-        "wires": [
-            [
-                "91e0fc5701534b6e"
-            ],
-            [
-                "0b97ec0243258aec"
-            ]
-        ]
-    },
-    {
-        "id": "91e0fc5701534b6e",
+        "id": "38fe756be46663b2",
         "type": "change",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "1b5d1f99b955b949",
+        "z": "1e2b629469898bce",
+        "g": "5171c94ca351e2f8",
         "name": "",
         "rules": [
             {
@@ -279,17 +193,17 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 280,
+        "x": 710,
+        "y": 300,
         "wires": [
             []
         ]
     },
     {
-        "id": "0b97ec0243258aec",
+        "id": "d7033219d48df907",
         "type": "change",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "1b5d1f99b955b949",
+        "z": "1e2b629469898bce",
+        "g": "5171c94ca351e2f8",
         "name": "",
         "rules": [
             {
@@ -312,17 +226,17 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 640,
-        "y": 320,
+        "x": 700,
+        "y": 340,
         "wires": [
             []
         ]
     },
     {
-        "id": "3e1cde092d1453ea",
+        "id": "aa01f7f32f515dc7",
         "type": "change",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "1b5d1f99b955b949",
+        "z": "1e2b629469898bce",
+        "g": "5171c94ca351e2f8",
         "name": "",
         "rules": [
             {
@@ -359,17 +273,17 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 340,
+        "x": 720,
+        "y": 380,
         "wires": [
             []
         ]
     },
     {
-        "id": "2c99fc49721838bb",
+        "id": "ea3cc55ebd9b7b59",
         "type": "inject",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "1b5d1f99b955b949",
+        "z": "1e2b629469898bce",
+        "g": "5171c94ca351e2f8",
         "name": "",
         "props": [],
         "repeat": "30",
@@ -378,19 +292,19 @@
         "onceDelay": "3",
         "topic": "",
         "x": 110,
-        "y": 300,
+        "y": 340,
         "wires": [
             [
-                "5efbbcec87161c46",
-                "ff96344429821422"
+                "74a011e3a1c7bcda",
+                "a689bbfaadd9c7c2"
             ]
         ]
     },
     {
-        "id": "0ba625c350c75d39",
+        "id": "73dd8c1aced50fce",
         "type": "inject",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "189b41574c9ec8b6",
+        "z": "1e2b629469898bce",
+        "g": "b9289c8c1791a369",
         "name": "",
         "props": [
             {
@@ -405,18 +319,18 @@
         "payload": "{\"cpu_load\":0,\"cpu_temperature_average\":0,\"cpu_temperature_max\":0,\"ram_used\":0,\"ram_available\":0,\"traffic_tx\":0,\"traffic_rx\":0,\"local_ip\":0,\"mac_address\":0,\"digi_serial_number\":0}",
         "payloadType": "json",
         "x": 110,
-        "y": 440,
+        "y": 480,
         "wires": [
             [
-                "503bfd82fed90bde"
+                "1b709e918e5360b0"
             ]
         ]
     },
     {
-        "id": "503bfd82fed90bde",
+        "id": "1b709e918e5360b0",
         "type": "function",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "189b41574c9ec8b6",
+        "z": "1e2b629469898bce",
+        "g": "b9289c8c1791a369",
         "name": "function 14",
         "func": "msg.payload.cpu_load = flow.get(\"cpu_load\");\nmsg.payload.cpu_temperature_average = flow.get(\"cpu_temperature_average\");\nmsg.payload.cpu_temperature_max = flow.get(\"cpu_temperature_max\");\nmsg.payload.ram_available = flow.get(\"ram_available\");\nmsg.payload.ram_used = flow.get(\"ram_used\");\nmsg.payload.traffic_tx = flow.get(\"traffic_tx\");\nmsg.payload.traffic_rx = flow.get(\"traffic_rx\");\nmsg.payload.digi_serial_number = {\"value\":1,\"context\":{\"radio_serial_number\":flow.get(\"digi_serial_number\")}};\n// msg.payload.mac_address = {\"value\":1,\"context\":{\"mac_address\":flow.get(\"mac_address\")}};\nmsg.payload.local_ip = {\"value\":1,\"context\":{\"local_ip\":flow.get(\"local_ip\")}};\nmsg.topic = \"/v1.6/devices/\"+flow.get(\"mac_address\");\nreturn msg;",
         "outputs": 1,
@@ -425,19 +339,19 @@
         "finalize": "",
         "libs": [],
         "x": 290,
-        "y": 440,
+        "y": 480,
         "wires": [
             [
-                "ed3f776ed52eaff8",
-                "7f83051fe30b7157"
+                "62f8f0d1505983b3",
+                "8e5425ed0161711c"
             ]
         ]
     },
     {
-        "id": "ed3f776ed52eaff8",
+        "id": "62f8f0d1505983b3",
         "type": "debug",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "189b41574c9ec8b6",
+        "z": "1e2b629469898bce",
+        "g": "b9289c8c1791a369",
         "name": "Gateway Telemetry",
         "active": true,
         "tosidebar": true,
@@ -448,14 +362,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 510,
-        "y": 440,
+        "y": 480,
         "wires": []
     },
     {
-        "id": "7f83051fe30b7157",
+        "id": "8e5425ed0161711c",
         "type": "mqtt out",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "189b41574c9ec8b6",
+        "z": "1e2b629469898bce",
+        "g": "b9289c8c1791a369",
         "name": "Publish Telmetry",
         "topic": "",
         "qos": "",
@@ -465,39 +379,39 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "ccbc5d68960d0c16",
+        "broker": "86565f626a796145",
         "x": 500,
-        "y": 480,
+        "y": 520,
         "wires": []
     },
     {
-        "id": "372e14b5775a555e",
+        "id": "05883045ca12c38a",
         "type": "mqtt in",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b629893a81a3bd9f",
+        "z": "1e2b629469898bce",
+        "g": "e3282ff6e148a328",
         "name": "White List Subscribe",
         "topic": "",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "ccbc5d68960d0c16",
+        "broker": "86565f626a796145",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 1,
         "x": 650,
-        "y": 620,
+        "y": 660,
         "wires": [
             [
-                "e563d2d3d7f3c0ae",
-                "e58e45f8a133f5bc"
+                "035a80bb50124e13",
+                "a6fd81b9daefc379"
             ]
         ]
     },
     {
-        "id": "58d0813efcfe4d78",
+        "id": "bc8aef22fccd6d5a",
         "type": "change",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b629893a81a3bd9f",
+        "z": "1e2b629469898bce",
+        "g": "e3282ff6e148a328",
         "name": "",
         "rules": [
             {
@@ -521,18 +435,18 @@
         "to": "",
         "reg": false,
         "x": 420,
-        "y": 620,
+        "y": 660,
         "wires": [
             [
-                "372e14b5775a555e"
+                "05883045ca12c38a"
             ]
         ]
     },
     {
-        "id": "57dd15e85d7e8750",
+        "id": "d95fef0e93060e87",
         "type": "ncd-gateway-node",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b155f8a144bfbecd",
+        "z": "1e2b629469898bce",
+        "g": "31729524c0486950",
         "name": "",
         "connection": "3a158777559a1790",
         "unknown_devices": 0,
@@ -541,15 +455,15 @@
         "y": 60,
         "wires": [
             [
-                "daa11dc7fa349e07"
+                "ee4e36bd7b005f78"
             ]
         ]
     },
     {
-        "id": "daa11dc7fa349e07",
+        "id": "ee4e36bd7b005f78",
         "type": "switch",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b155f8a144bfbecd",
+        "z": "1e2b629469898bce",
+        "g": "31729524c0486950",
         "name": "",
         "property": "topic",
         "propertyType": "msg",
@@ -567,15 +481,15 @@
         "y": 60,
         "wires": [
             [
-                "d4618ca1f31c712b"
+                "c2f8916246ed245f"
             ]
         ]
     },
     {
-        "id": "d4618ca1f31c712b",
+        "id": "c2f8916246ed245f",
         "type": "change",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b155f8a144bfbecd",
+        "z": "1e2b629469898bce",
+        "g": "31729524c0486950",
         "name": "",
         "rules": [
             {
@@ -591,17 +505,17 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
+        "x": 560,
         "y": 60,
         "wires": [
             []
         ]
     },
     {
-        "id": "e563d2d3d7f3c0ae",
+        "id": "035a80bb50124e13",
         "type": "debug",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b629893a81a3bd9f",
+        "z": "1e2b629469898bce",
+        "g": "e3282ff6e148a328",
         "name": "Whitelist Update",
         "active": true,
         "tosidebar": true,
@@ -612,31 +526,31 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 880,
-        "y": 620,
+        "y": 660,
         "wires": []
     },
     {
-        "id": "508632b7af5d5bea",
+        "id": "b4f9fa7c12da0b08",
         "type": "status",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b629893a81a3bd9f",
+        "z": "1e2b629469898bce",
+        "g": "e3282ff6e148a328",
         "name": "",
         "scope": [
-            "372e14b5775a555e"
+            "05883045ca12c38a"
         ],
         "x": 100,
-        "y": 620,
+        "y": 660,
         "wires": [
             [
-                "e34d3aaa5e8aba99"
+                "f6831fd94557311e"
             ]
         ]
     },
     {
-        "id": "7f2f005b79e8c0f4",
+        "id": "47fa3380f33e2469",
         "type": "exec",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "6bbd761fc91a203a",
+        "z": "1e2b629469898bce",
+        "g": "d31f4bad872a4dab",
         "command": "ip addr show",
         "addpay": "",
         "append": "",
@@ -646,20 +560,21 @@
         "oldrc": false,
         "name": "",
         "x": 310,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
-                "696a9e25728eb952"
+                "183e7fd90b6b3830",
+                "7853edfbefb4b6c7"
             ],
             [],
             []
         ]
     },
     {
-        "id": "1881479c7dfc0acc",
+        "id": "9f28ef2032ac9fac",
         "type": "inject",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "6bbd761fc91a203a",
+        "z": "1e2b629469898bce",
+        "g": "d31f4bad872a4dab",
         "name": "",
         "props": [],
         "repeat": "30",
@@ -668,53 +583,53 @@
         "onceDelay": "1",
         "topic": "",
         "x": 110,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
-                "7f2f005b79e8c0f4"
+                "47fa3380f33e2469"
             ]
         ]
     },
     {
-        "id": "696a9e25728eb952",
+        "id": "183e7fd90b6b3830",
         "type": "function",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "6bbd761fc91a203a",
+        "z": "1e2b629469898bce",
+        "g": "d31f4bad872a4dab",
         "name": "function 15",
-        "func": "var ip = \"\";\nvar mac = \"\";\nfunction extractEth0Info(output) {\n    const lines = output.split('\\n');\n    \n    let eth0Section = false;\n    let brlanSelection = false;\n\n    for (const line of lines) {\n\n        //Get IP from ETH0 Interface\n        if (line.includes('11: eth0:')) {\n            eth0Section = true;\n        } else if (eth0Section && line.startsWith(' ')) {\n            if (line.includes('inet ') && !line.includes('inet6')) {\n                const inetAddressWithCIDR = line.match(/inet ([0-9.]+\\/[0-9]+)/)[1];\n                ip = inetAddressWithCIDR.split('/')[0];\n                eth0Section = false;\n            }\n        }\n\n\n        //Get MAC address from br_lan Interface\n        if (line.includes('14: br_lan:')) {\n            brlanSelection = true;\n        } else if (brlanSelection && line.startsWith(' ')) {\n            if (line.includes('link/ether')) {\n                mac = line.match(/link\\/ether ([0-9a-f:]+)/)[1];\n                brlanSelection = false\n            }\n        }\n    }\n\n    return;\n}\n\n// Extract and print eth0 info\nconst eth0Info = extractEth0Info(msg.payload);\nflow.set(\"local_ip\",ip);\nflow.set(\"mac_address\",mac);\n//Set global variable for subscribe topic for whitelisting sensors\nflow.set(\"white_list_topic\", \"/v1.6/devices/\" + mac +\"/child_devices\");\nmsg.broker = {};\nmsg.broker.username = mac;\nmsg.action = \"connect\"\nreturn msg;",
+        "func": "var ip = \"\";\nvar mac = \"\";\nfunction extractEth0Info(output) {\n    const lines = output.split('\\n');\n\n    let eth0Section = false;\n    let brlanSelection = false;\n\n    for (const line of lines) {\n\n        //Get IP from ETH0 Interface\n        if (line.includes('eth0:')) {\n            eth0Section = true;\n        } else if (eth0Section && line.startsWith(' ')) {\n            if (line.includes('inet ') && !line.includes('inet6')) {\n                const inetAddressWithCIDR = line.match(/inet ([0-9.]+\\/[0-9]+)/)[1];\n                ip = inetAddressWithCIDR.split('/')[0];\n                eth0Section = false;\n            }\n        }\n\n\n        //Get MAC address from br_lan Interface\n        if (line.includes('br_lan:')) {\n            brlanSelection = true;\n        } else if (brlanSelection && line.startsWith(' ')) {\n            if (line.includes('link/ether')) {\n                mac = line.match(/link\\/ether ([0-9a-f:]+)/)[1];\n                brlanSelection = false\n            }\n        }\n    }\n\n    return;\n}\n\n// Extract and print eth0 info\nconst eth0Info = extractEth0Info(msg.payload);\nflow.set(\"local_ip\", ip);\nflow.set(\"mac_address\", mac);\n//Set global variable for subscribe topic for whitelisting sensors\nflow.set(\"white_list_topic\", \"/v1.6/devices/\" + mac + \"/child_devices\");\nmsg.broker = {};\nmsg.broker.username = mac;\nmsg.action = \"connect\"\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 530,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
-                "26a245be32162e02"
+                "0f83db278ab02525"
             ]
         ]
     },
     {
-        "id": "aa4d17aa03093058",
+        "id": "545e0f8ccc4eea02",
         "type": "link out",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "6bbd761fc91a203a",
+        "z": "1e2b629469898bce",
+        "g": "d31f4bad872a4dab",
         "name": "link out 1",
         "mode": "link",
         "links": [
-            "1d07f3fece9c5fde",
-            "ebb168a56f5c44ba"
+            "18ff79b9c98197fc"
         ],
         "x": 785,
-        "y": 180,
+        "y": 160,
         "wires": []
     },
     {
-        "id": "e34d3aaa5e8aba99",
+        "id": "f6831fd94557311e",
         "type": "switch",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b629893a81a3bd9f",
+        "z": "1e2b629469898bce",
+        "g": "e3282ff6e148a328",
         "name": "",
         "property": "status.text",
         "propertyType": "msg",
@@ -729,18 +644,18 @@
         "repair": false,
         "outputs": 1,
         "x": 250,
-        "y": 620,
+        "y": 660,
         "wires": [
             [
-                "58d0813efcfe4d78"
+                "bc8aef22fccd6d5a"
             ]
         ]
     },
     {
-        "id": "e58e45f8a133f5bc",
+        "id": "a6fd81b9daefc379",
         "type": "change",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b629893a81a3bd9f",
+        "z": "1e2b629469898bce",
+        "g": "e3282ff6e148a328",
         "name": "",
         "rules": [
             {
@@ -757,33 +672,33 @@
         "to": "",
         "reg": false,
         "x": 920,
-        "y": 660,
+        "y": 700,
         "wires": [
             []
         ]
     },
     {
-        "id": "72ad9dd8aabe80c5",
+        "id": "d4f74c1a477dd350",
         "type": "ncd-gateway-node",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "08f555a93f6af4ec",
+        "z": "1e2b629469898bce",
+        "g": "a5069d4d0f8eb24a",
         "name": "",
         "connection": "3a158777559a1790",
         "unknown_devices": 0,
         "outputs": 1,
         "x": 150,
-        "y": 800,
+        "y": 840,
         "wires": [
             [
-                "054d0fae246af450"
+                "8cc768475cf33a5a"
             ]
         ]
     },
     {
-        "id": "054d0fae246af450",
+        "id": "8cc768475cf33a5a",
         "type": "switch",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "08f555a93f6af4ec",
+        "z": "1e2b629469898bce",
+        "g": "a5069d4d0f8eb24a",
         "name": "sensor_data",
         "property": "topic",
         "propertyType": "msg",
@@ -798,18 +713,18 @@
         "repair": false,
         "outputs": 1,
         "x": 350,
-        "y": 800,
+        "y": 840,
         "wires": [
             [
-                "2de3d6c4f3ed3d8a"
+                "d2292d72e25db902"
             ]
         ]
     },
     {
-        "id": "2de3d6c4f3ed3d8a",
+        "id": "75194025fba3c998",
         "type": "function",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "08f555a93f6af4ec",
+        "z": "1e2b629469898bce",
+        "g": "a5069d4d0f8eb24a",
         "name": "Check Whitelist",
         "func": "var whiteListSensors = flow.get(\"white_list_sensors\");\nvar list = whiteListSensors.split(\",\");\nif (list.includes(msg.payload.addr)){\n    return msg;\n}else{\n    return null;\n}\n",
         "outputs": 1,
@@ -817,19 +732,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
-        "y": 800,
+        "x": 760,
+        "y": 840,
         "wires": [
             [
-                "ae9491fa2f565adb"
+                "eed8885b8dcd2258"
             ]
         ]
     },
     {
-        "id": "ae9491fa2f565adb",
+        "id": "eed8885b8dcd2258",
         "type": "function",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "08f555a93f6af4ec",
+        "z": "1e2b629469898bce",
+        "g": "a5069d4d0f8eb24a",
         "name": "flatten JSON",
         "func": "msg.topic = \"/v1.6/devices/\" + msg.payload.addr;\ndelete msg.payload.original;\ndelete msg.payload.addr;\ndelete msg.payload.sensor_name;\ndelete msg.payload.battery;\ndelete msg.payload.type;\ndelete msg.time\ndelete msg.payload.sensor_type;\nconst flattenedObj = { ...msg.payload, ...msg.payload.sensor_data };\n\n// Remove the sensor_data property\ndelete flattenedObj.sensor_data;\nmsg.payload = flattenedObj\nreturn msg;",
         "outputs": 1,
@@ -837,20 +752,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 800,
+        "x": 950,
+        "y": 840,
         "wires": [
             [
-                "7266146041fc8e08",
-                "d1076ee639c8d473"
+                "7ae034849c0b7cef",
+                "93d012ad0d6ddafa"
             ]
         ]
     },
     {
-        "id": "7266146041fc8e08",
+        "id": "7ae034849c0b7cef",
         "type": "debug",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "08f555a93f6af4ec",
+        "z": "1e2b629469898bce",
+        "g": "a5069d4d0f8eb24a",
         "name": "Sensor Telemetry",
         "active": true,
         "tosidebar": true,
@@ -860,80 +775,80 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 930,
+        "x": 1150,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "93d012ad0d6ddafa",
+        "type": "link out",
+        "z": "1e2b629469898bce",
+        "g": "a5069d4d0f8eb24a",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "8157de542853a779"
+        ],
+        "x": 1065,
         "y": 800,
         "wires": []
     },
     {
-        "id": "d1076ee639c8d473",
-        "type": "link out",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "08f555a93f6af4ec",
-        "name": "link out 2",
-        "mode": "link",
-        "links": [
-            "711e9b4d33dce8d1"
-        ],
-        "x": 855,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "711e9b4d33dce8d1",
+        "id": "8157de542853a779",
         "type": "link in",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "189b41574c9ec8b6",
+        "z": "1e2b629469898bce",
+        "g": "b9289c8c1791a369",
         "name": "link in 1",
         "links": [
-            "d1076ee639c8d473"
-        ],
-        "x": 325,
-        "y": 480,
-        "wires": [
-            [
-                "7f83051fe30b7157"
-            ]
-        ]
-    },
-    {
-        "id": "ebb168a56f5c44ba",
-        "type": "link in",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "189b41574c9ec8b6",
-        "name": "link in 2",
-        "links": [
-            "aa4d17aa03093058"
+            "93d012ad0d6ddafa"
         ],
         "x": 325,
         "y": 520,
         "wires": [
             [
-                "7f83051fe30b7157"
+                "8e5425ed0161711c"
             ]
         ]
     },
     {
-        "id": "82413d8ef470e659",
-        "type": "status",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b6e24cebb218ace9",
-        "name": "Broker Connection",
-        "scope": [
-            "7f83051fe30b7157"
+        "id": "18ff79b9c98197fc",
+        "type": "link in",
+        "z": "1e2b629469898bce",
+        "g": "b9289c8c1791a369",
+        "name": "link in 2",
+        "links": [
+            "545e0f8ccc4eea02"
         ],
-        "x": 130,
-        "y": 920,
+        "x": 325,
+        "y": 560,
         "wires": [
             [
-                "3a9b5d476c8cfc05"
+                "8e5425ed0161711c"
             ]
         ]
     },
     {
-        "id": "3a9b5d476c8cfc05",
+        "id": "9028c4debddd878c",
+        "type": "status",
+        "z": "1e2b629469898bce",
+        "g": "416a9fe6a78de7c6",
+        "name": "Broker Connection",
+        "scope": [
+            "8e5425ed0161711c"
+        ],
+        "x": 130,
+        "y": 960,
+        "wires": [
+            [
+                "bc102b840b632d92"
+            ]
+        ]
+    },
+    {
+        "id": "bc102b840b632d92",
         "type": "switch",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b6e24cebb218ace9",
+        "z": "1e2b629469898bce",
+        "g": "416a9fe6a78de7c6",
         "name": "",
         "property": "status.text",
         "propertyType": "msg",
@@ -953,21 +868,21 @@
         "repair": false,
         "outputs": 2,
         "x": 290,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
-                "8507173c1d1bf5b6"
+                "3aa813e2e7ba8c0f"
             ],
             [
-                "ca204250705d39d9"
+                "0648a792d0330ac8"
             ]
         ]
     },
     {
-        "id": "8507173c1d1bf5b6",
+        "id": "3aa813e2e7ba8c0f",
         "type": "change",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b6e24cebb218ace9",
+        "z": "1e2b629469898bce",
+        "g": "416a9fe6a78de7c6",
         "name": "",
         "rules": [
             {
@@ -984,16 +899,16 @@
         "to": "",
         "reg": false,
         "x": 480,
-        "y": 900,
+        "y": 940,
         "wires": [
             []
         ]
     },
     {
-        "id": "ca204250705d39d9",
+        "id": "0648a792d0330ac8",
         "type": "change",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b6e24cebb218ace9",
+        "z": "1e2b629469898bce",
+        "g": "416a9fe6a78de7c6",
         "name": "",
         "rules": [
             {
@@ -1010,16 +925,16 @@
         "to": "",
         "reg": false,
         "x": 480,
-        "y": 940,
+        "y": 980,
         "wires": [
             []
         ]
     },
     {
-        "id": "26a245be32162e02",
+        "id": "0f83db278ab02525",
         "type": "switch",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "6bbd761fc91a203a",
+        "z": "1e2b629469898bce",
+        "g": "d31f4bad872a4dab",
         "name": "",
         "property": "broker_status",
         "propertyType": "flow",
@@ -1034,18 +949,18 @@
         "repair": false,
         "outputs": 1,
         "x": 670,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
-                "aa4d17aa03093058"
+                "545e0f8ccc4eea02"
             ]
         ]
     },
     {
-        "id": "28c4af0ed39b22ef",
+        "id": "51767d544cc920d3",
         "type": "inject",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b6e24cebb218ace9",
+        "z": "1e2b629469898bce",
+        "g": "416a9fe6a78de7c6",
         "name": "Initialize connection variable",
         "props": [],
         "repeat": "",
@@ -1054,18 +969,18 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 180,
-        "y": 980,
+        "y": 1020,
         "wires": [
             [
-                "894d59aa5a139854"
+                "17f6455ba39c1b51"
             ]
         ]
     },
     {
-        "id": "894d59aa5a139854",
+        "id": "17f6455ba39c1b51",
         "type": "change",
-        "z": "4c3d68c3cb4ac80a",
-        "g": "b6e24cebb218ace9",
+        "z": "1e2b629469898bce",
+        "g": "416a9fe6a78de7c6",
         "name": "",
         "rules": [
             {
@@ -1082,13 +997,179 @@
         "to": "",
         "reg": false,
         "x": 420,
-        "y": 980,
+        "y": 1020,
         "wires": [
             []
         ]
     },
     {
-        "id": "ccbc5d68960d0c16",
+        "id": "74a011e3a1c7bcda",
+        "type": "function",
+        "z": "1e2b629469898bce",
+        "g": "5171c94ca351e2f8",
+        "name": "NCD Gateway CPU Usage",
+        "func": "\n// Get or initialize previous tick counts from context\nlet previousTotalTick = context.get('previousTotalTick') || [];\nlet previousTotalIdle = context.get('previousTotalIdle') || [];\n\nlet currentTotalTick = [];\nlet currentTotalIdle = [];\nlet overallUsagePercentage = 0;\n\n// Initialize arrays for new cores if needed\nconst cpuCount = os.cpus().length;\nif (previousTotalTick.length !== cpuCount) {\n    previousTotalTick = new Array(cpuCount).fill(0);\n    previousTotalIdle = new Array(cpuCount).fill(0);\n}\n\n// Calculate CPU usage for each core\nfor (let i = 0; i < cpuCount; i++) {\n    currentTotalTick[i] = 0;\n    currentTotalIdle[i] = 0;\n\n    // Sum total CPU ticks (user, nice, sys, idle, irq)\n    for (let type in os.cpus()[i].times) {\n        currentTotalTick[i] += os.cpus()[i].times[type];\n    }\n\n    // Total idle time\n    currentTotalIdle[i] = os.cpus()[i].times.idle;\n\n    // Calculate differences since last execution\n    const totalTickDifference = currentTotalTick[i] - (previousTotalTick[i] || 0);\n    const totalIdleDifference = currentTotalIdle[i] - (previousTotalIdle[i] || 0);\n\n    // Calculate CPU usage percentage\n    const percentageCPU = totalTickDifference > 0 ? 100 - Math.round(100 * totalIdleDifference / totalTickDifference) : 0;\n\n    overallUsagePercentage += percentageCPU;\n}\n\n// Store current ticks for next execution\ncontext.set('previousTotalTick', currentTotalTick);\ncontext.set('previousTotalIdle', currentTotalIdle);\n\n// Output overall usage (to output 2)\nvar avgUsage = cpuCount > 0 ? overallUsagePercentage / cpuCount : 0;\nnode.send([{payload: avgUsage, topic: 'overall'}, null]);\n\n// Output temperature (to output 4, async)\nconsole.log('here');\nsystemInfo.cpuTemperature((data) => {\n        node.send([null, { payload: data.main, max: data.max, cores: data.cores, topic: 'temperature' }]);\n});",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "os",
+                "module": "os"
+            },
+            {
+                "var": "systemInfo",
+                "module": "systeminformation"
+            }
+        ],
+        "x": 400,
+        "y": 320,
+        "wires": [
+            [
+                "38fe756be46663b2"
+            ],
+            [
+                "d7033219d48df907"
+            ]
+        ],
+        "icon": "font-awesome/fa-microchip"
+    },
+    {
+        "id": "a689bbfaadd9c7c2",
+        "type": "function",
+        "z": "1e2b629469898bce",
+        "g": "5171c94ca351e2f8",
+        "name": "commands",
+        "func": "msg.payload = \"free -m | awk '/Mem:/ {printf \\\"{\\\\\\\"used\\\\\\\":%d,\\\\\\\"free\\\\\\\":%d}\\\\n\\\", $3, $4}'\";\nmsg.topic = 'mem';\nnode.send(msg);\nmsg.payload = \"awk '/eth0:/ {eth0_rx=$2; eth0_tx=$10} /wlan0:/ {wlan0_rx=$2; wlan0_tx=$10} END {printf \\\"{\\\\\\\"eth0\\\\\\\":{\\\\\\\"rx\\\\\\\":%d,\\\\\\\"tx\\\\\\\":%d},\\\\\\\"wlan0\\\\\\\":{\\\\\\\"rx\\\\\\\":%d,\\\\\\\"tx\\\\\\\":%d}}\\\\n\\\", eth0_rx?eth0_rx:0, eth0_tx?eth0_tx:0, wlan0_rx?wlan0_rx:0, wlan0_tx?wlan0_tx:0}' /proc/net/dev\";\nmsg.topic = 'nw';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 225,
+        "y": 380,
+        "wires": [
+            [
+                "f7ff74063377beda"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f7ff74063377beda",
+        "type": "exec",
+        "z": "1e2b629469898bce",
+        "g": "5171c94ca351e2f8",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "NCD Gateway status",
+        "x": 360,
+        "y": 380,
+        "wires": [
+            [
+                "8f0f1595edf91464"
+            ],
+            [],
+            []
+        ],
+        "icon": "node-red/bridge.svg"
+    },
+    {
+        "id": "8f0f1595edf91464",
+        "type": "json",
+        "z": "1e2b629469898bce",
+        "g": "5171c94ca351e2f8",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 495,
+        "y": 380,
+        "wires": [
+            [
+                "c9c2325e35abe870"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "c9c2325e35abe870",
+        "type": "join",
+        "z": "1e2b629469898bce",
+        "g": "5171c94ca351e2f8",
+        "name": "join",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "1",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 545,
+        "y": 380,
+        "wires": [
+            [
+                "aa01f7f32f515dc7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "7853edfbefb4b6c7",
+        "type": "debug",
+        "z": "1e2b629469898bce",
+        "g": "d31f4bad872a4dab",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d2292d72e25db902",
+        "type": "function",
+        "z": "1e2b629469898bce",
+        "g": "a5069d4d0f8eb24a",
+        "name": "add context to string types",
+        "func": "// Iterate through all properties in msg.payload.sensor_data\nfor (let prop in msg.payload.sensor_data) {\n    // Check if the property value is a string\n    if (typeof msg.payload.sensor_data[prop] === 'string') {\n        // Replace the string with the specified object structure\n        msg.payload.sensor_data[prop] = {\n            value: 1,\n            context: {\n                [prop]: msg.payload.sensor_data[prop]\n            }\n        };\n    }\n}\n\n// Return the modified msg object\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 840,
+        "wires": [
+            [
+                "75194025fba3c998"
+            ]
+        ]
+    },
+    {
+        "id": "86565f626a796145",
         "type": "mqtt-broker",
         "name": "ncd-cloud",
         "broker": "http://ncd.mqtt.api.ubidots.com/",
@@ -1099,6 +1180,7 @@
         "protocolVersion": "4",
         "keepalive": "60",
         "cleansession": true,
+        "autoUnsubscribe": true,
         "birthTopic": "",
         "birthQos": "0",
         "birthPayload": "",
